@@ -1,0 +1,11 @@
+<div class="mb-4">
+<h2 class="text-xl print:text-2xl md:text-2xl font-heading">Authors</h2>
+{{ range . }}
+  <p>
+    {{.name}} - 
+    {{ range $i, $e := .social -}}
+    {{- if $i -}},&nbsp;{{- end -}}<span>{{- .name -}}</span>
+    {{- end }}
+  </p>
+{{ end }}
+</div>

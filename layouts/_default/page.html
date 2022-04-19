@@ -1,0 +1,7 @@
+{{- define "main" -}}
+  {{ $count := 0}}
+  {{- range .Params.page_sections -}}
+    {{ partial (printf "blocks/block-%s.html" .fieldGroup) (dict "Section" . "Page" $ "section_count" $count ) }}
+    {{ $count = (add $count 1) }}
+  {{- end -}}
+{{- end -}}

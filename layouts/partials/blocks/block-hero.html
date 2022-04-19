@@ -1,0 +1,15 @@
+<section aria-label="Page Section Heading" class='z-50 p-4 lg:py-10 mt-8 shadow-lg 
+  {{ if eq .Section.background_choice "black" }}bg-black{{ end }}
+  {{ if eq .Section.background_choice "gray" }}bg-gray-600{{ end }}'>
+  <h1 id="{{ urlize .Section.heading_markdown }}-{{.section_count}}" 
+    class='text-center text-4xl print:text-4xl md:text-5xl font-heading 
+    {{ if (eq .Section.background_choice "black") }}
+      text-white
+    {{ else if (eq .Section.background_choice "gray") }}
+      text-gray-300
+    {{ else }}
+      text-red-500
+    {{ end }}'>
+    {{ markdownify .Section.heading_markdown }}
+  </h1>
+</section>
