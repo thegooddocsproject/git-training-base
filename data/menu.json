@@ -1,0 +1,14 @@
+[
+    {
+      "name": "Home",
+      "url": "/"
+    },
+    {
+      "name": "Blog",
+      "url": "/blog"
+    },
+    {
+      "name": "Contact us",
+      "url": "/contact"
+    }
+  ]
