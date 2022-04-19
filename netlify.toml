@@ -1,0 +1,12 @@
+# Settings in the [build] context are global and are applied to 
+# all contexts unless otherwise overridden by more specific contexts.
+[build]
+  # Hugo build folder
+  publish = "public/"
+
+  # Will use tailwind to build the main.css file, then run Hugo to build the site.
+  command = "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/style.css && hugo"
+  
+  # Set Hugo Version
+  environment = { HUGO_VERSION = "0.92.1" }
+  

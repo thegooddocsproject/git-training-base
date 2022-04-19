@@ -1,0 +1,27 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'Hugo Starter Site'
+
+navigateToChanged = true
+enableEmoji = true
+
+[markup.goldmark]
+[markup.goldmark.extensions]
+definitionList = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+taskList = true
+typographer = false
+[markup.goldmark.parser]
+autoHeadingID = true
+autoHeadingIDType = "github"
+[markup.goldmark.parser.attribute]
+block = true
+title = true
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false
+

@@ -1,0 +1,23 @@
+{
+  "name": "git-training-base",
+  "version": "1.0.0",
+  "description": "Base repository for Git training",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thegooddocsproject/git-training-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thegooddocsproject/git-training-base/issues"
+  },
+  "homepage": "https://github.com/thegooddocsproject/git-training-base#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24"
+  }
+}
