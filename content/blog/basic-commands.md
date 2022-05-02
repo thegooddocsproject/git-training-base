@@ -26,7 +26,11 @@ The stay command can be difficult for dogs to master. However, this is an essent
 
 If you're the proud owner of a new puppy, you might find this [blog post](https://www.rover.com/blog/train-puppy-stay/) by our friends at Rover.com helpful.
 
+[//]: <> (Maybe fixing this broken link?)
+
 **Sit**
+
+[//]: <> (Change headings from gerunds to imperative)
 
 The sit command is one of the first commands you'll learn at The Good Dogs Project. Once your dog learns how to sit, you can transition to teaching her other commands like stay or wait. 
 
