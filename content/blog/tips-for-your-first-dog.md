@@ -1,5 +1,5 @@
 ---
-title: Tips for picking your first dog
+title: 4 tips for picking your first dog
 date: 2022-03-04T23:34:20.818Z
 draft: false
 type: blog
@@ -12,7 +12,7 @@ Congratulations on deciding to become a dog owner! Owning a dog is a wonderful, 
 
 The first step to becoming a dog owner, of course, is to pick your dog! But there are multiple breeds to choose from. How do you know which breed is best for you? Keep reading to find out what you should consider when picking your first dog.
 
-## Lifestyle
+Lifestyle
 
 What kind of lifestyle do you lead? Do you work multiple jobs? Are you often on the go? 
 
@@ -30,8 +30,10 @@ Breeds that are known to be laid-back and easygoing are usually good choices for
 
 Breeds like Dalmations, Border Collies, and Australian Shepherd are very energetic dog breeds. They might require constant entertainment or exercise. If you're a very active person, or know that you will be able to match their high-energy needs, consider looking into one of these breeds!
 
+---
+
 Your lifestyle, space, and personality preferences are important factors to consider when picking a new dog. If you're interested in a particular dog breed, make sure that you do plenty of research to learn more about their energy requirements, size requirements, and their personality. 
 
 ## Sources
-* [Vestreet](http://www.vetstreet.com/our-pet-experts/getting-your-first-dog-heres-how-to-find-the-best-breed-for-you)
+* [Vestreet(http://www.vetstreet.com/our-pet-experts/getting-your-first-dog-heres-how-to-find-the-best-breed-for-you)
 * [Top Dog County Club](https://www.topdogcountryclub.com/blog/temperament-personality-behavior-what-can-i-change-and-what-can-i-not)
