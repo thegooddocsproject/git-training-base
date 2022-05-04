@@ -1,12 +1,12 @@
 ---
-title: The Good Dogs project
+title: The Good Dogs Project
 date: 2022-02-04T21:48:46.000Z
 draft: false
 layout: page
 page_sections:
   - background_choice: gray
     fieldGroup: hero
-    heading_markdown: The Good Dogs project 🐶
+    heading_markdown: The Good Dogs Project 🐶
   - label: Content Section
     fieldGroup: content
   # - heading_markdown: Another Heading
