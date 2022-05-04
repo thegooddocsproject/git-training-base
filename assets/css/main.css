@@ -1,0 +1,13 @@
+/* assets */ 
+@tailwind base;
+@tailwind components;
+
+.video-demo {
+  @apply bg-green-50
+}
+
+@tailwind utilities;
+
+figcaption {
+  text-align: center;
+}

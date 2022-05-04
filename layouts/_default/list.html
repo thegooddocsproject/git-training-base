@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="block mt-8 px-8 mb-12">
+  <div class="w-full max-w-6xl mx-auto pb-8 prose prose-img:rounded-xl prose-img:max-w-2xl prose-headings:underline">
+    <h2 class="font-medium text-4xl text-gray-600">{{ .Title }} - <span class="capitalize">{{ .Params.flavor }}</span></h2>
+    {{ .Content }}
+  </div>
+  <div aria-label="List of all news posts." class="max-w-full lg:max-w-6xl mx-auto flex flex-wrap justify-between">
+    {{ range .Pages }}
+    <div class="lg:max-w-xl w-full lg:flex p-4 mx-auto">
+      <div aria-label="Featured Image"
+        class="h-48 lg:h-auto lg:w-48 flex-none bg-cover bg-center border-l border-t border-r rounded-t lg:border-b lg:rounded-t-none lg:rounded-l text-center overflow-hidden" 
+        style="background-image: url({{ .Params.preview | relURL }})">
+      </div>
+      <div class="w-full border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+        <div class="mb-1">
+          <p aria-label="Title" class="block text-black font-bold text-xl mb-1"><a href="{{ .RelPermalink }}">{{.Title}}</a></p>
+          <p class="text-sm">Posted: {{ dateFormat "Monday, Jan 2, 2006" .Date }}</p>
+          <p class="text-base mt-4">{{.Description}}</p>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

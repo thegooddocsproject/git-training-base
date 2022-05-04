@@ -1,0 +1,338 @@
+{
+  "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
+  "frontMatter.framework.id": "hugo",
+  "frontMatter.content.publicFolder": "static",
+  "frontMatter.content.autoUpdateDate": true,
+  "frontMatter.preview.host": "https://1313-zivbk1-hugostarter-36b3p7x8hh5.ws-us38.gitpod.io",
+  "frontMatter.dashboard.openOnStart": true,
+  "frontMatter.framework.startCommand": "hugo server -D -F --baseUrl $(gp url 1313) --appendPort=false --liveReloadPort=443 --bind=0.0.0.0",
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Pages",
+      "path": "[[workspace]]/content",
+      "excludeSubdir": true
+    },
+    {
+      "title": "Blog Posts",
+      "path": "[[workspace]]/content/blog"
+    }
+  ],
+  "frontMatter.taxonomy.contentTypes": [
+    {
+      "name": "page",
+      "fields": [
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Last Modified date",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
+          "title": "Article preview image",
+          "name": "preview",
+          "type": "image",
+          "isPreviewImage": true
+        },
+        {
+          "title": "Page Sections",
+          "name": "page_sections",
+          "type": "block",
+          "fieldGroup": [
+            "hero",
+            "content",
+            "all"
+          ]
+        },
+        {
+          "title": "Content Type",
+          "name": "type",
+          "hidden": true,
+          "default": "page"
+        }
+      ]
+    },
+    {
+      "name": "blog",
+      "fields": [
+        {
+          "title": "Is in draft",
+          "name": "draft",
+          "type": "draft"
+        },
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string"
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Publishing date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Last Modified date",
+          "name": "lastmod",
+          "type": "datetime"
+        },
+        {
+          "title": "Article preview image",
+          "name": "preview",
+          "type": "image"
+        },
+        {
+          "title": "Tags",
+          "name": "tags",
+          "type": "tags"
+        },
+        {
+          "title": "Categories",
+          "name": "categories",
+          "type": "categories"
+        },
+        {
+          "title": "Content Type",
+          "name": "type",
+          "hidden": true,
+          "default": "blog"
+        }
+      ]
+    }
+  ],
+  "frontMatter.data.files": [
+    {
+      "id": "menu",
+      "title": "Navigation Menu",
+      "file": "[[workspace]]/data/menu.json",
+      "fileType": "json",
+      "labelField": "name",
+      "schema": {
+        "title": "Menu",
+        "type": "object",
+        "required": [
+          "name",
+          "url"
+        ],
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "url": {
+            "type": "string",
+            "title": "URL"
+          }
+        }
+      }
+    }
+  ],
+  "frontMatter.taxonomy.fieldGroups": [
+    {
+      "id": "hero",
+      "labelField": "heading_markdown",
+      "fields": [
+        {
+          "title": "Heading",
+          "name": "heading_markdown",
+          "type": "string"
+        },
+        {
+          "title": "Background Color",
+          "name": "background_choice",
+          "type": "choice",
+          "choices": [
+            {
+              "id": "black",
+              "title": "Black"
+            },
+            {
+              "id": "gray",
+              "title": "Gray"
+            }
+          ]
+        },
+        {
+          "title": "Text Color",
+          "name": "text_choice",
+          "type": "choice",
+          "choices": [
+            {
+              "id": "black",
+              "title": "Black"
+            },
+            {
+              "id": "white",
+              "title": "White"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "labelField": "label",
+      "fields": [
+        {
+          "title": "Label",
+          "name": "label",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "id": "all",
+      "labelField": "title",
+      "fields": [
+        {
+          "title": "Title",
+          "name": "title",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Description",
+          "name": "description",
+          "type": "string"
+        },
+        {
+          "title": "Date",
+          "name": "date",
+          "type": "datetime"
+        },
+        {
+          "title": "Toggle",
+          "name": "toggled",
+          "type": "boolean"
+        },
+        {
+          "title": "Authors",
+          "name": "authors",
+          "type": "block",
+          "fieldGroup": [
+            "author"
+          ]
+        },
+        {
+          "title": "Feeling",
+          "name": "feeling",
+          "type": "taxonomy",
+          "taxonomyId": "feelings"
+        },
+        {
+          "title": "Photo",
+          "type": "fields",
+          "name": "photo",
+          "fields": [
+            {
+              "title": "Caption",
+              "name": "caption",
+              "type": "string"
+            },
+            {
+              "title": "Image",
+              "name": "image",
+              "type": "image"
+            }
+          ]
+        },
+        {
+          "title": "Background Color",
+          "name": "background_choice",
+          "type": "choice",
+          "choices": [
+            {
+              "id": "black",
+              "title": "Black"
+            },
+            {
+              "id": "gray",
+              "title": "Gray"
+            }
+          ]
+        },
+        {
+          "title": "Text Color",
+          "name": "text_choice",
+          "type": "choice",
+          "choices": [
+            {
+              "id": "black",
+              "title": "Black"
+            },
+            {
+              "id": "white",
+              "title": "White"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "author",
+      "labelField": "name",
+      "fields": [
+        {
+          "title": "Author Name",
+          "name": "name",
+          "type": "string",
+          "single": true
+        },
+        {
+          "title": "Social",
+          "name": "social",
+          "type": "block",
+          "fieldGroup": [
+            "social"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social",
+      "labelField": "name",
+      "fields": [
+        {
+          "title": "Service Name",
+          "name": "name",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "frontMatter.taxonomy.customTaxonomy": [
+    {
+      "id": "feelings",
+      "options": [
+        "Cheerful",
+        "Content",
+        "Enthralled",
+        "Optimistic",
+        "Proud",
+        "Relieved"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+<section aria-label="All the Things!" class='mx-auto max-w-4xl p-4 lg:py-10 mt-8  
+  {{ if eq .Section.background_choice "black" }}bg-black {{ end }}
+  {{ if eq .Section.background_choice "gray" }}bg-gray-600 {{ end }}
+  {{ if eq .Section.text_choice "black" }}text-black{{ end }} 
+  {{ if eq .Section.text_choice "white" }}text-white{{ end }}'>
+  <h1 id="{{ urlize .Section.title }}" class="text-3xl print:text-3xl md:text-4xl font-heading">
+    {{ markdownify .Section.title }}
+  </h1>
+  <p>Date: {{ time.Format "Monday, Jan 2, 2006" .Section.date }}</p>
+  {{ partial "components/authors" .Section.authors }}
+  <div class="bg-gray-100 p-4 my-2 text-gray-600 prose">
+    {{ markdownify .Section.description }}
+  </div>
+  <p>
+    Was it toggled?
+    <label>
+      <input class="cursor-not-allowed" type="checkbox" {{ if .Section.toggled }}checked aria-checked="true"{{ end }} disabled>
+    </label>
+  </p>
+  {{ with .Section.photo }}
+    <h2 class="text-2xl print:text-2xl md:text-3xl font-heading">Photo</h2>
+    <figure class="max-w-2xl mx-auto bg-white p-2 my-4 shadow-md">
+      <img class="border border-gray-300 rounded-md" src={{.image}} alt={{.caption}}>
+      <figcaption class="pt-2 text-gray-600 text-center">{{.caption}}</figcaption>
+    </figure>
+  {{ end }}
+  {{ if .Section.feeling }}
+    <p>Today I feel {{ range $i, $e := (sort .Section.feeling) }}{{- if $i -}},&nbsp;{{- end -}}{{ . }}{{ end }}.</p>
+  {{ end }}
+</section>
