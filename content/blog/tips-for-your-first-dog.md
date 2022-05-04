@@ -16,7 +16,7 @@ Lifestyle
 
 What kind of lifestyle do you lead? Do you work multiple jobs? Are you often on the go? 
 
-Some breeds, like the Cavalier King Charles Spaniel, Golden Retrievers, and Border Collie, are companion animals at heart. In other words, they can develop separation anxiety. If you're usually on the go and rarely at home, you may want to avoid these breeds. Labrador Retrivers, French Bulldogs, and Pugs usually do better when left at home alone. 
+Some breeds, like the Cavalier King Charles Spaniel, Golden Retrievers, and Border Collie, are companion animals at heart. In other words, they can develop separation anxiety. If you're usually on the go and rarely at home, you may want to avoid these breeds. Labrador Retrievers, French Bulldogs, and Pugs usually do better when left at home alone. 
 
 ## Space
 
