@@ -14,11 +14,11 @@ The Good Dogs Project recently published a blog post about the top three command
 
 ## Your tasks
 
-There are two tasks you must complete. You'll complete your work in the `/content/blog/basic-commands.md` file.
+There are three tasks you must complete. You'll complete your work in the `/content/blog/basic-commands.md` file.
 
 ### Fix a broken link
 
-Fix the broken link on line 27 under the **Stay** section.
+Fix the broken link on line 27 under the **Staying in place** section.
 
 ### Change headings that use -ing 
 
